@@ -99,7 +99,9 @@
         background-size: 30px 30px; /* tamanho do ícone */
         padding-left: 40px; /* manter o mesmo padding no hover */
       }
-      
+
+
+
       
       @media (max-width: 785px) {
         .navigation {
@@ -156,4 +158,5 @@
           width: 125%;
         }
       }
+            
       
