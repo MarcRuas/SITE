@@ -1,0 +1,159 @@
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10%;
+    margin: auto;
+}
+
+.home-text{
+    max-width: 100%;
+}
+
+.home-text .text-h1{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    line-height: 50px;
+}
+.home-text p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+/*AREA CARDS */
+
+.section-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-bottom: 100px;
+   }
+   
+   
+   .cards{
+       display: flex;
+       flex-direction: row;
+    }
+   
+    .card{
+        background-color: #FF4A4A;
+        width: 200px;
+        height: 180px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+        border: 1px dashed #9747FF;
+        border-radius: 5px;
+    }
+    
+    .card:hover {
+        transform:  scale(0.8);
+      }
+      
+    .card img{
+        width: 100px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      }
+      
+      #ct {
+        text-decoration: none;
+        background-color: #FF4A4A;
+        color: #fff;
+        padding: 10px 40px;
+        border-radius: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        border-color: red;
+        transition: all 0.3s ease;
+        background-image: url('/components/imagens/icons8-mais-30\ 1.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 30px 30px; /* tamanho do ícone */
+        padding-left: 40px; /* adicionar padding para afastar o texto da borda */
+      }
+      
+      #ct:hover {
+        background-color: white;
+        color: #FF4A4A;
+        border: 2px solid #FF4A4A;
+        background-image: url('/components/imagens/icons8-mais-30\ 1\ \(1\).png');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 30px 30px; /* tamanho do ícone */
+        padding-left: 40px; /* manter o mesmo padding no hover */
+      }
+      
+      
+      @media (max-width: 785px) {
+        .navigation {
+          padding: 18px 20px;
+        }
+        .menu {
+          display: block;
+        }
+        .menu.ativo .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .menu.ativo .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .menu.ativo .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+        .nav-menu {
+          position: fixed;
+          right: -100%;
+          top: 70px;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          background: var(--white);
+          gap: -10px;
+          transition: 0.3s;
+        }
+        .nav-menu.ativo {
+          right: 0;
+        }
+        .nav-item {
+          margin: 16px 0;
+        }
+        /* main */
+        .home {
+          padding: 100px 2%;
+          flex-direction: column;
+          text-align: center;
+          overflow: hidden;
+          gap: 5rem;
+        }
+        .home .text-h4 {
+          font-size: 15px;
+        }
+        .home .text-h1 {
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+        .home p {
+          font-size: 15px;
+        }
+        .home-img {
+          width: 125%;
+        }
+      }
+      
